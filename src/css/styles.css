@@ -1,1 +1,48 @@
-/* No CSS */
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 1160px;
+  height: 100%;
+  margin: auto;
+}
+
+.header-inner {
+  font-size: 18px;
+  margin-top: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__link {
+  margin-right: 30px;
+  position: relative;
+  text-decoration: none;
+  color: #000000;
+}
+
+.header__link:last-child {
+  margin-right: 0;
+}
+
+.header__link::after {
+  content: '';
+  height: 2px;
+  width: 0;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .3s linear;
+}
+
+.header__link:hover::after {
+  width: 100%;
+}

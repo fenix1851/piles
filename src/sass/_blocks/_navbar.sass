@@ -1,0 +1,25 @@
+.header
+    &-inner
+        font-size: 18px
+        margin-top: 52px
+        display: flex
+        justify-content: space-between
+    &__link
+        margin-right: 30px
+        position: relative
+        text-decoration: none
+        color: $text-color 
+        &:last-child
+            margin-right: 0
+        &::after
+            content: ''
+            height: 2px
+            width: 0
+            background-color: $text-color
+            position: absolute
+            bottom: 0
+            left: 0
+            transition: .3s linear
+        &:hover
+            &::after
+                width: 100%
