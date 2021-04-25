@@ -1,0 +1,61 @@
+.hero
+    &-section
+        margin-top: 80px
+    &-image
+    &-inner
+        display: flex
+        align-items: center
+    &-container
+        width: 1160px
+        margin: auto
+    &-text
+        position: relative
+        &__title
+            font-size: 50px
+            line-height: 65px
+            max-width: 600px
+            margin-bottom: 15px
+        &__subtitle
+            display: block
+            margin-bottom: 50px
+            font-size: 20px
+        &-buttons
+            display: flex
+        &__call
+            padding: 13px 57px 13px 57px
+            height: 55px
+            background-color: $buttonFormColor
+            outline: none
+            border: none
+            border-radius: 7px
+            color: white
+            margin-right: 40px
+            font-size: 20px
+        &__download
+            display: flex
+            border-radius: 7px
+            padding-left: 44px 
+            height: 55px
+            align-items: center
+            font-size: 20px
+            background-color: white
+            text-decoration: none
+            color: $text-color
+            border: 2px solid $buttonFormColor
+        &-button
+            &__img
+                margin-left: 9px
+                margin-right: 14px
+        &::after
+            content: url(/src/img/hero/hero-img.png)
+            width: 100px
+            height: 100px
+            background-color: $buttonFormColor
+            display: inline-block
+            position: absolute
+            top: 0
+            left: 110%
+
+            
+        
+        
