@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *:after,
 *:before {
@@ -422,6 +423,8 @@ body {
   margin-bottom: 25px;
   position: relative;
   display: inline-block;
+  text-decoration: underline;
+  text-decoration-color: #1CB519;
 }
 
 .about__title::before {
@@ -461,4 +464,128 @@ body {
 
 .about-content-text__p:last-child {
   margin-bottom: 0;
+}
+
+.footer-inner {
+  position: relative;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__title {
+  font-size: 50px;
+  line-height: 50px;
+  max-width: 450px;
+  position: relative;
+  text-decoration: underline;
+  text-decoration-color: #1CB519;
+}
+
+.footer-office-hours {
+  max-width: 320px;
+  font-size: 18px;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+
+.footer-form-description {
+  font-size: 18px;
+  max-width: 420px;
+  line-height: 23px;
+}
+
+.footer-form__name, .footer-form__tel {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 5px;
+  width: 360px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #1CB519;
+  margin-bottom: 40px;
+}
+
+.footer-form__name {
+  margin-top: 30px;
+}
+
+.footer-form__button {
+  width: 200px;
+  height: 55px;
+  border-radius: 30px;
+  background-color: #1CB519;
+  color: #fff;
+  position: relative;
+  border-color: transparent;
+}
+
+.footer-form__button::after {
+  content: 'Нажимая на кнопку вы соглашаетесь с Политикой конфидециальности';
+  width: 120px;
+  height: 30px;
+  position: absolute;
+  left: 110%;
+  top: 13px;
+  font-size: 10px;
+  color: #C5C5C5;
+}
+
+.footer-map {
+  position: relative;
+  margin-top: 125px;
+}
+
+.footer-map__email, .footer-map__tel, .footer-map__map {
+  position: absolute;
+  left: 40px;
+  color: white;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+}
+
+.footer-map__email {
+  top: 12px;
+}
+
+.footer-map__email::before {
+  content: url(/src/img/footer/email.svg);
+  position: absolute;
+  left: -25px;
+  top: 1px;
+}
+
+.footer-map__tel {
+  top: 45px;
+}
+
+.footer-map__tel::before {
+  content: url(/src/img/footer/tel.svg);
+  position: absolute;
+  left: -25px;
+  top: 1px;
+}
+
+.footer-map__map {
+  top: 74px;
+  width: 170px;
+}
+
+.footer-map__map::before {
+  content: url(/src/img/footer/map.svg);
+  position: absolute;
+  left: -25px;
+  top: 3px;
+}
+
+.footer-map::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 240px;
+  height: 135px;
+  background-color: #1CB519;
 }
