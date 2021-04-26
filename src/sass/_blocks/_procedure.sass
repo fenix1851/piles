@@ -1,0 +1,29 @@
+.procedure
+    &-section
+        padding-top: 70px
+        margin-top: 0
+        margin-bottom: 0
+
+.circle
+    display: flex
+    flex-direction: column
+    max-width: 140px
+    position: relative
+    &::after
+        content: ''
+        height: 1px
+        width: 60px
+        background-color: $text-color
+        position: absolute
+        top: 75px
+        left: 100%
+    &:last-child
+        &::after
+            display: none
+
+    &__title
+        text-align: center
+    &s
+        display: flex
+        justify-content: space-around
+        margin-top: 50px
