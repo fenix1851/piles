@@ -282,7 +282,7 @@ body {
 }
 
 .hero-text::after {
-  content: url(src/img/hero/hero-img.png);
+  content: url(../img/hero/hero-img.png);
   width: 100px;
   height: 100px;
   background-color: #1CB519;
@@ -437,7 +437,7 @@ body {
 }
 
 .mechanism-list-list {
-  list-style-image: url(src/img/mechanism/rectangle.png);
+  list-style-image: url(../img/mechanism/rectangle.png);
   display: block;
   padding-left: 21px;
   margin-top: 30px;
@@ -445,7 +445,7 @@ body {
 }
 
 .mechanism-list-list::after {
-  content: url(src/img/mechanism/drilling.png);
+  content: url(../img/mechanism/drilling.png);
   display: inline-block;
   position: absolute;
   top: 17%;
@@ -691,7 +691,7 @@ body {
 }
 
 .footer-map__email::before {
-  content: url(src/img/footer/email.svg);
+  content: url(../img/footer/email.svg);
   position: absolute;
   left: -25px;
   top: 1px;
@@ -702,7 +702,7 @@ body {
 }
 
 .footer-map__tel::before {
-  content: url(src/img/footer/tel.svg);
+  content: url(../img/footer/tel.svg);
   position: absolute;
   left: -25px;
   top: 1px;
@@ -714,7 +714,7 @@ body {
 }
 
 .footer-map__map::before {
-  content: url(src/img/footer/map.svg);
+  content: url(../img/footer/map.svg);
   position: absolute;
   left: -25px;
   top: 3px;
