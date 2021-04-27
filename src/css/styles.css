@@ -282,7 +282,7 @@ body {
 }
 
 .hero-text::after {
-  content: url(/src/img/hero/hero-img.png);
+  content: url(src/img/hero/hero-img.png);
   width: 100px;
   height: 100px;
   background-color: #1CB519;
